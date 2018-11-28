@@ -10,3 +10,6 @@ iso:
 clean:
 	$(MAKE) clean -C kernel
 	rm -f uks.iso
+
+run:
+	qemu-system-i386 -cdrom uks.iso -enable-kvm -m 64M
