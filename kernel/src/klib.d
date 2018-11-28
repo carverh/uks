@@ -230,7 +230,7 @@ void* kalloc(size_t size) {
     for (size_t i = 0; i < (page_count * PAGE_SIZE); i++)
         ptr[i] = 0;
 
-    return cast(void *)ptr;
+    return cast(void*)ptr;
 }
 
 void kfree(void* ptr) {

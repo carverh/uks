@@ -25,9 +25,9 @@ void init_vga_textmode() {
     return;
 }
 
-void text_putstring(const char* str) {
-    for (size_t i = 0; str[i]; i++)
-        text_putchar(str[i]);
+void text_putstring(string str) {
+    foreach (char c; str)
+        text_putchar(c);
     return;
 }
 

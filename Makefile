@@ -12,4 +12,4 @@ clean:
 	rm -f uks.iso
 
 run:
-	qemu-system-i386 -cdrom uks.iso -enable-kvm -m 64M
+	qemu-system-x86_64 -cdrom uks.iso -enable-kvm -m 64M
